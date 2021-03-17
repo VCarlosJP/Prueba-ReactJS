@@ -1,0 +1,54 @@
+@mixin custom-input {
+  margin-top: 10px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.login-container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.login-box {
+  display: grid;
+  justify-content: center;
+
+  color: rgb(0, 0, 0);
+  background: #eeeeee;
+  border: 0.01em solid rgb(185, 185, 185);
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+}
+
+.form-login {
+  margin-top: 30px;
+}
+
+.input-login {
+  @include custom-input;
+}
+
+.confirm-button {
+  display: inline-block;
+  width: 100%;
+  border: 0;
+  padding: 8px;
+  color: #fff;
+  font: normal normal bold 15px Arial;
+  border-radius: 0.25rem;
+  background: rgb(54, 118, 255);
+}
+
+.confirm-button:hover {
+  cursor: pointer;
+  background: darken(rgb(54, 118, 255), 10);
+}

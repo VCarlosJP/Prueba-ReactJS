@@ -1,0 +1,24 @@
+// Este archivo maneja los estilos de la tabla encargada de renderizar todas las mediciones.
+table {
+  margin-top: 30px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.measurements-table-container {
+  margin-top: 30px;
+  max-height: 550px;
+  overflow-y: scroll;
+}
